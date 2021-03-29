@@ -13,13 +13,15 @@ body {
 }
 
 #container {
-  width: 960px;
-  height: 640px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 #slider {
   width: 100%;
-  height: 512px;
+  height: 50%;
   display: flex;
   background-color: gray;
   justify-content: center;
@@ -29,10 +31,13 @@ body {
 
 #la, #ra {
   width: 50px;
+  height: 100%;
   flex: 1;
+  display: none;
+  /* 500px felett:
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
 #ra {
@@ -40,27 +45,54 @@ body {
 }
 
 #photo-container {
-  flex: 12;
+  height: 100%;
+  flex: 14;
+  background-color: black;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  /*500px: position: relative;*/
 }
 
 #photo {
+  object-fit: contain;
   display: block;
   max-width: 100%;
-  max-height: 50%;
+  max-height: 100%;
 }
 
 #thumbnails {
-  background-color: darkmagenta;
-  height: 128px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* 500px: height: 128px; 
+  justify-content: center;
+  align-items: center;*/
 }
 
+.thumbnails {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px;
+  border: #bbb 0px solid;
+  border-radius: 2px;
+}
+
+.thumbnails>img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+
 #details {
-  position: absolute;
-  bottom: 0;
+  /*500px:   position: absolute; 
+    bottom: 0;
+  */
+
   width: 100%;
   background-color: rgba(50, 50, 50, 0.5);
   color: rgb(200, 200, 200);
