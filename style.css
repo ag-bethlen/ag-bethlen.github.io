@@ -161,26 +161,19 @@ p {
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 900px) {
   #container {
-    width: 768px;
-    height: 516px;
+    width: 900px;
+    height: 600px;
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1200px) {
   #thumbnails {
     --thumbnails-count: 7;
   }
   #container {
-    width: 992px;
-    height: 668px;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  #container {
-    width: 1024px;
-    height: 768px;
+    width: 1200px;
+    height: 800px;
   }
 }
