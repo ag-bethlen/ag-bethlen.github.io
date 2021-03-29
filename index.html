@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MyFirstApp</title>
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,7 +15,12 @@
         <img src="pics/arrow.svg" alt="">
       </nav>
       <div id="photo-container">
-        <img id="photo">
+        <picture>
+          <source media="(min-width:1280px)" id="photo">
+          <source media="(min-width:1000px)" id="photo-l">
+          <source media="(min-width:720px)" id="photo-m">
+          <img id="photo-s" class="photo">
+        </picture>        
         <div id="details">
           <h1 id="photo-title"></h1>
           <p id="photo-description"></p>
@@ -28,6 +34,8 @@
     </div>
   </main>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
+  <script src="images.json"></script>
   <script src="script.js"></script>
 </body>
 </html>
