@@ -123,10 +123,10 @@ p {
     --thumbnails-count: 5;
   }
 
-  #container {
+  /*#container {
     width: 600px;
     height: 400px;
-  }
+  }*/
 
   .thumbnails {
     width: calc(100% / calc(2 + var(--thumbnails-count)));
